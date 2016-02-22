@@ -11,11 +11,11 @@
 @implementation PixelateGridAnimator
 
 - (NSUInteger)rowsNumber {
-    return 22;
+    return 8;//22
 }
 
 - (NSUInteger)columnsNumber {
-    return 32;
+    return 10;//32
 }
 
 - (void)animateFromCellView:(UIView *)fromCell toCellView:(UIView *)toCell inTime:(NSTimeInterval)time {

@@ -105,6 +105,15 @@
                 [self.orderMatrix sortLeftScanning];
             }
             break;
+        case ScanningSortMethodVertical:
+            if (self.presenting) {
+                [self.orderMatrix sortBottomScanning];
+            } else {
+                [self.orderMatrix sortTopScanning];
+            }
+            break;
+        default:
+            break;
     }
 }
 

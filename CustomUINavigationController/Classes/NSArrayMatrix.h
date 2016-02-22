@@ -20,5 +20,7 @@
 - (void) randomize;
 - (void) sortRightScanning;
 - (void) sortLeftScanning;
+- (void) sortBottomScanning;
+- (void) sortTopScanning;
 
 @end

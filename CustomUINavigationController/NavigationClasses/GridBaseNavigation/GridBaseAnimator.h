@@ -10,7 +10,8 @@
 
 typedef enum {
     ScanningSortMethodRandom,
-    ScanningSortMethodHorizontal
+    ScanningSortMethodHorizontal,
+    ScanningSortMethodVertical
 } ScanningSortMethod;
 
 @interface GridBaseAnimator : BaseControllerAnimatedTransitioningDelegate
