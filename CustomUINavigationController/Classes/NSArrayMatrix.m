@@ -64,15 +64,8 @@
 }
 
 - (void) sortBottomScanning {
-    NSMutableArray *sortedArray = [NSMutableArray array];
-    
-    //Get an array sort the elements by rows
-    for (NSInteger index=0; index<[self.elements count]; index++) {
-        NSInteger auxPos = ((index%self.rows) * self.columns) + index/self.rows;
-        [sortedArray addObject:self.elements[auxPos]];
-    }
-    
-    self.elements = sortedArray;
+    [self sortTopScanning];
+    self.elements = [NSMutableArray arrayWithArray:[[self.elements reverseObjectEnumerator] allObjects]];
 }
 
 - (void) sortLeftScanning {
